@@ -13,6 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Navigate to the project directory
+        run: cd Portfolio # Remplacez 'client' par le dossier contenant votre projet React
+
       - name: Install dependencies
         run: npm install
 
