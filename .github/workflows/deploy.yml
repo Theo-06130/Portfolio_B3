@@ -13,13 +13,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set working directory
-        run: cd Portfolio
-
       - name: Install dependencies
+        working-directory: Portfolio # Spécifiez le dossier contenant le fichier package.json
         run: npm install
 
       - name: Build project
+        working-directory: Portfolio # Spécifiez le dossier contenant le fichier package.json
         run: npm run build
 
       - name: Deploy via FTP
