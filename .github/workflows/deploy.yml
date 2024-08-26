@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set working directory
-        working-directory: Portfolio
+        run: cd Portfolio
 
       - name: Install dependencies
         run: npm install
