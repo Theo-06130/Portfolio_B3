@@ -14,33 +14,32 @@ interface Item {
 
 let notifications = [
     {
-        name: "Payment received",
-        description: "Magic UI",
-        time: "15m ago",
-
-        icon: "💸",
+        name: "Naissance",
+        description: "Début de l'aventure",
+        time: "20y ago",
+        icon: "👶",
         color: "#00C9A7",
     },
     {
-        name: "User signed up",
-        description: "Magic UI",
-        time: "10m ago",
-        icon: "🎶",
+        name: "Stage Observation 3ème",
+        description: "Chez Docaposte",
+        time: "6y ago",
+        icon: "🔍",
         color: "#FFB800",
     },
     {
-        name: "New message",
-        description: "Magic UI",
-        time: "5m ago",
-        icon: "💬",
-        color: "#FF3D71",
+        name: "Bac général",
+        description: "Spé Physique-chimie/NSI",
+        time: "2y ago",
+        icon: "👨‍🎓",
+        color: "#10c7e6",
     },
     {
-        name: "New event",
-        description: "Magic UI",
-        time: "2m ago",
-        icon: "🗞️",
-        color: "#1E86FF",
+        name: "3ème année informatique",
+        description: "Spécialité Cyber-sécurité",
+        time: "Now",
+        icon: "💻",
+        color: "#dc7a12",
     },
 ];
 
@@ -74,7 +73,7 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
                         <span className="mx-1">·</span>
                         <span className="text-xs text-gray-800">{time}</span>
                     </figcaption>
-                    <p className="text-sm font-normal dark:text-white/60">
+                    <p className="text-sm font-normal text-left dark:text-white/60">
                         {description}
                     </p>
                 </div>
