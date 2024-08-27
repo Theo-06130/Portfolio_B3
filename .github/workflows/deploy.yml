@@ -3,7 +3,7 @@ name: Deploy to Hostinger
 on:
   push:
     branches:
-      - main  # Branche sur laquelle l'action s'exécute
+      - main
 
 jobs:
   build-and-deploy:
@@ -11,21 +11,21 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  # Version mise à jour
 
       - name: Install dependencies
-        working-directory: Portfolio # Spécifiez le dossier contenant le fichier package.json
+        working-directory: Portfolio
         run: npm install
 
       - name: Build project
-        working-directory: Portfolio # Spécifiez le dossier contenant le fichier package.json
+        working-directory: Portfolio
         run: npm run build
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ftp.theo-cerkownik.fr
+          server: ftp.votre-serveur-hostinger.com
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          local-dir: build/
-          server-dir: /public_html
+          local-dir: Portfolio/build/
+          server-dir: /public_html/
