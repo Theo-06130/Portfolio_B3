@@ -1,26 +1,20 @@
+// src/App.jsx
+
 import React from 'react';
 import './App.css';
-import { Helmet } from "react-helmet";
-import ScrollHandler from './components/ScrollHandler';
-import Zone1 from './components/Zone1.jsx';
-import Zone2 from './components/Zone2.jsx';
-import Zone3 from './components/Zone3.jsx';
-import ZoneF from "@/components/ZoneF.jsx";
+import BlurIn from "@/components/magicui/blur-in";
+import NumberTicker from "@/components/magicui/number-ticker";
+import {AnimatedListDemo} from "@/components/magicui/animated-list_demo.tsx";
+import TypingAnimation from "@/components/magicui/typing-animation.tsx";
+
 
 function App() {
     return (
         <>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Théo Cerkownik</title>
-                <link rel="stylesheet"
-                      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
-            </Helmet>
-            <ScrollHandler>
-                <Zone1 />
-                <Zone2 />
-                <Zone3 />
-            </ScrollHandler>
+            <main className="w-full h-full overflow-hidden">
+                <TypingAnimation text="Work In Progress"></TypingAnimation>
+                <AnimatedListDemo></AnimatedListDemo>
+            </main>
         </>
     );
 }
