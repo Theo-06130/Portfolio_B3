@@ -27,5 +27,5 @@ jobs:
           server: ftp.votre-serveur-hostinger.com
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          local-dir: Portfolio/build/
+          local-dir: Portfolio/dist/
           server-dir: /public_html/
