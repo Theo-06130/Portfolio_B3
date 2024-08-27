@@ -1,17 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+
+import React from 'react';
+import './App.css';
 import BlurIn from "@/components/magicui/blur-in";
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-        <BlurIn word={"Hello World"}></BlurIn>
-    </>
-  )
+function App() {
+    return (
+        <>
+
+            <BlurIn className="text-blue-800" word={"Hello World"}></BlurIn>
+
+        </>
+    );
 }
 
-export default App
+export default App;
