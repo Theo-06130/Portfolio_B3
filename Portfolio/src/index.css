@@ -2,12 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection{
-  color: #371b57;
-}
 
 :root {
-  font-family: Roboto,Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -36,7 +33,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  overflow: visible;
+  overflow: hidden;
 }
 
 h1 {
