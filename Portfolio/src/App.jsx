@@ -8,6 +8,8 @@ import TypingAnimation from "@/components/magicui/typing-animation.tsx";
 import HaloEffect from "@/components/ui/HaloEffect.jsx";
 import WordRotate from "@/components/magicui/word-rotate.tsx";
 import DelayedAppearance from "@/components/ui/DelayedAppearance.jsx";
+import HyperText from "@/components/magicui/hyper-text.tsx";
+import WordFadeIn from "@/components/magicui/word-fade-in.tsx";
 
 
 function App() {
@@ -24,10 +26,11 @@ function App() {
             {/*    <p className="text-5xl font-bold tracking-[.10em] text-transparent hover:text-gray-600 hover:opacity-50 transition-colors duration-500">La lumière UV révèle le texte caché.</p>*/}
             {/*</div>*/}
             <main className="w-screen h-screen overflow-hidden lg:mt-28">
-                <TypingAnimation className="text-5xl" text="Théo Cerkownik"></TypingAnimation>
-                <DelayedAppearance delay="2000">
-                <span className="flex justify-center items-center mt-4"><h2 className="text-4xl mr-2">Je suis</h2><WordRotate className="text-4xl" words={["Étudiant", "Photographe","Motard"]}/></span>
-                </DelayedAppearance>
+                <TypingAnimation className="text-7xl mt-10 mb-10" text="Théo Cerkownik"></TypingAnimation>
+                <span className="flex justify-center items-center mt-4"><WordFadeIn className="mr-4" words="Je suis étudiant en "></WordFadeIn> <HyperText text="Cybersécurité">
+
+                </HyperText></span>
+
             </main>
         </>
     );
