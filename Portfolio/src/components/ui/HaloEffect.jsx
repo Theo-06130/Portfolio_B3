@@ -3,30 +3,50 @@ import React, { useState, useEffect } from 'react';
 const HaloEffect = () => {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [haloPosition, setHaloPosition] = useState({ x: 0, y: 0 });
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768); // Seuil pour écran de bureau
 
     useEffect(() => {
-        const handleMouseMove = (e) => {
-            setMousePosition({ x: e.clientX, y: e.clientY });
+        // Fonction pour mettre à jour l'état de l'écran
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth > 1024); // Mettre à jour la condition pour les écrans de bureau
         };
 
-        window.addEventListener('mousemove', handleMouseMove);
+        // Écouter les changements de taille de la fenêtre
+        window.addEventListener('resize', handleResize);
 
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-        };
+        // Nettoyage de l'écouteur lors du démontage
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     useEffect(() => {
-        const updatePosition = () => {
-            setHaloPosition((prevPosition) => ({
-                x: prevPosition.x + (mousePosition.x - prevPosition.x) * 0.1,
-                y: prevPosition.y + (mousePosition.y - prevPosition.y) * 0.1,
-            }));
-        };
+        if (isDesktop) {
+            const handleMouseMove = (e) => {
+                setMousePosition({ x: e.clientX, y: e.clientY });
+            };
 
-        const animationFrame = requestAnimationFrame(updatePosition);
-        return () => cancelAnimationFrame(animationFrame);
-    }, [mousePosition, haloPosition]);
+            window.addEventListener('mousemove', handleMouseMove);
+
+            return () => {
+                window.removeEventListener('mousemove', handleMouseMove);
+            };
+        }
+    }, [isDesktop]);
+
+    useEffect(() => {
+        if (isDesktop) {
+            const updatePosition = () => {
+                setHaloPosition((prevPosition) => ({
+                    x: prevPosition.x + (mousePosition.x - prevPosition.x) * 0.1,
+                    y: prevPosition.y + (mousePosition.y - prevPosition.y) * 0.1,
+                }));
+            };
+
+            const animationFrame = requestAnimationFrame(updatePosition);
+            return () => cancelAnimationFrame(animationFrame);
+        }
+    }, [mousePosition, haloPosition, isDesktop]);
+
+    if (!isDesktop) return null; // Ne rien rendre sur les appareils mobiles
 
     return (
         <div
