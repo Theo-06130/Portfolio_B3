@@ -3,7 +3,7 @@ name: Deploy to Hostinger
 on:
   push:
     branches:
-      - Prod
+      - Prod_test
 
 jobs:
   build-and-deploy:
