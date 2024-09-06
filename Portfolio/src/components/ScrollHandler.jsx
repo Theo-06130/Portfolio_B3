@@ -35,7 +35,7 @@ const ScrollHandler = ({ children }) => {
         }
     };
 
-    const handleClick = (e) => {
+    const handleClick = () => {
         const zone1 = document.getElementById('zone1');
         const zone2 = document.getElementById('zone2');
         const zone3 = document.getElementById('zone3');
@@ -63,15 +63,21 @@ const ScrollHandler = ({ children }) => {
         }
     };
 
+    const handleKeyPress = (e) => {
+        if (e.key === ' ' || e.key === 'ArrowDown') {
+            handleClick();
+        }
+    };
+
     useEffect(() => {
         // Ajout du gestionnaire de touche et de molette pour desktop
+        window.addEventListener('keydown', handleKeyPress);
         window.addEventListener('wheel', handleScroll);
-        window.addEventListener('click', handleClick);
 
         // Nettoyage des gestionnaires lors du démontage du composant
         return () => {
+            window.removeEventListener('keydown', handleKeyPress);
             window.removeEventListener('wheel', handleScroll);
-            window.removeEventListener('click', handleClick);
         };
     }, []);
 
@@ -81,6 +87,8 @@ const ScrollHandler = ({ children }) => {
             className="h-screen overflow-hidden relative"
         >
             {children}
+            {/* Zone interactive pour les clics dans la partie basse */}
+            <div className="absolute bottom-0 w-full h-20 bg-transparent cursor-pointer"></div>
         </div>
     );
 };
