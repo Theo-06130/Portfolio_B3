@@ -10,7 +10,7 @@ const Zone1 = () => {
             <HaloEffect />
             <main className="w-screen h-screen overflow-hidden lg:mt-28">
                 <TypingAnimation className="text-7xl mt-10 mb-10" text="Théo Cerkownik" />
-                <span className="flex justify-center items-center mt-4">
+                <span className="flex flex-col justify-center items-center mt-4 md:flex-row">
                     <WordFadeIn className="mr-4" words="Je suis étudiant en " />
                     <HyperText text="Cybersécurité" />
                 </span>
