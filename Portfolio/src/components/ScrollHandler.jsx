@@ -47,9 +47,9 @@ const ScrollHandler = ({ children }) => {
         else if (zone2Bounding.top >= 0 && zone2Bounding.top < window.innerHeight) {
             zone3.scrollIntoView({ behavior: 'smooth' });
         }
-        // Si on est dans la Zone 3, retourner à la Zone 2
+        // Si on est dans la Zone 3, retourner à la Zone 1
         else if (zone3Bounding.left >= 0 && zone3Bounding.left < window.innerWidth) {
-            zone2.scrollIntoView({ behavior: 'smooth' });
+            zone1.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
