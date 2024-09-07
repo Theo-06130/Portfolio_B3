@@ -1,11 +1,10 @@
-// src/App.jsx
-
 import React from 'react';
 import './App.css';
-import {Helmet} from "react-helmet";
-import {AnimatedListDemo} from "@/components/magicui/animated-list_demo.tsx";
-import TypingAnimation from "@/components/magicui/typing-animation.tsx";
-
+import { Helmet } from "react-helmet";
+import ScrollHandler from './components/ScrollHandler';
+import Zone1 from './components/Zone1.jsx';
+import Zone2 from './components/Zone2.jsx';
+import Zone3 from './components/Zone3.jsx';
 
 function App() {
     return (
@@ -13,13 +12,16 @@ function App() {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Théo Cerkownik</title>
+                <link rel="stylesheet"
+                      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
             </Helmet>
-            <main className="w-screen h-screen overflow-hidden lg:mt-28">
-                <TypingAnimation text="Work In Progress"></TypingAnimation>
-                <AnimatedListDemo></AnimatedListDemo>
-            </main>
+            <ScrollHandler>
+                <Zone1 />
+                <Zone2 />
+                <Zone3 />
+            </ScrollHandler>
         </>
     );
 }
-//hi world
+
 export default App;
