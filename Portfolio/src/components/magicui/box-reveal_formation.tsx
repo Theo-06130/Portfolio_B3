@@ -4,15 +4,15 @@ import React from "react";
 
 export function BoxRevealForma() {
     return (
-        <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden pt-8">
+        <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden">
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                <p className="text-[3.5rem] font-semibold">
+                <p className="text-2xl font-semibold md:text-[3.5rem] md:mb-4 md:mt-4 ">
                     Formations<span className="text-[#5046e6]">.</span>
                 </p>
             </BoxReveal>
 
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                <h2 className="mt-[.5rem] text-[1rem]">
+                <h2 className="mt-[.5rem] text-[1rem] text-left">
                     Baccalauréat Général - {" "}
                     <span className="text-[#5046e6]">Section Européenne Anglais</span>
                 </h2>
@@ -36,7 +36,7 @@ export function BoxRevealForma() {
             </BoxReveal>
             <hr className="mt-8 rounded  bg-white"/>
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                <h2 className="mt-8 text-[1rem]">
+                <h2 className="mt-8 text-[1rem] text-left">
                     Bachelor informatique - {" "}
                     <span className="text-[#5046e6]">Spécialisation Cybersécurité jusqu'au Bac+5</span>
                 </h2>
