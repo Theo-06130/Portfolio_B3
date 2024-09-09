@@ -1,7 +1,5 @@
 import React from 'react';
 import {BoxRevealForma} from "@/components/magicui/box-reveal_formation.tsx";
-import ScrollToTopButton from "@/components/ui/ScrollToTopButton.jsx";
-
 const Zone2 = () => {
     return (
         <div

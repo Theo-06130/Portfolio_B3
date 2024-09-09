@@ -28,8 +28,6 @@ function App() {
                 <Zone6 />
                 <Zone7 />
             </ScrollHandler>
-
-
         </>
     );
 }
