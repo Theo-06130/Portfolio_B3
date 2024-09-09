@@ -10,7 +10,6 @@ import Zone5 from './components/Zone5.jsx';
 import Zone6 from "@/components/Zone6.jsx";
 import Zone7 from "@/components/Zone7.jsx";
 
-
 function App() {
     return (
         <>
@@ -29,6 +28,8 @@ function App() {
                 <Zone6 />
                 <Zone7 />
             </ScrollHandler>
+
+
         </>
     );
 }
