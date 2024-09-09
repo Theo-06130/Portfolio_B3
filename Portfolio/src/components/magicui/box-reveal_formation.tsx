@@ -6,7 +6,7 @@ export function BoxRevealForma() {
     return (
         <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden">
             <BoxReveal boxColor={"#7CD7E9"} duration={0.5}>
-                <p className="text-3xl font-semibold md:text-[3.5rem] md:mb-4 md:mt-4 ">
+                <p className="text-3xl mt-4 font-semibold md:text-[3.5rem] md:mb-4 md:mt-10 ">
                     Formations<span className="text-[#7CD7E9]">.</span>
                 </p>
             </BoxReveal>
@@ -34,9 +34,9 @@ export function BoxRevealForma() {
                     </p>
                 </div>
             </BoxReveal>
-            <hr className="mt-2.5 rounded  bg-white md:mt-8"/>
+            <hr className="mt-4 rounded  bg-white md:mt-8"/>
             <BoxReveal boxColor={"#7CD7E9"} duration={0.5}>
-                <h2 className="mt-2.5 text-[1rem] text-left md:mt-8">
+                <h2 className="mt-4 text-[1rem] text-left md:mt-8">
                     Ynov campus de Sophia-Antipolis - {" "}
                     <span className="text-[#7CD7E9]">Actuellement en bachelor 3 informatique</span>
                 </h2>
