@@ -1,57 +1,59 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const ScrollHandler = ({ children }) => {
+    const [currentZone, setCurrentZone] = useState(1);
+
     const handleClick = () => {
-        const zone1 = document.getElementById('zone1');
-        const zone2 = document.getElementById('zone2');
-        const zone3 = document.getElementById('zone3');
-        const zone4 = document.getElementById('zone4');
-        const zone5 = document.getElementById('zone5');
-        const zone6 = document.getElementById('zone6');
-        const zone7 = document.getElementById('zone7');
+        const zones = Array.from(document.querySelectorAll('[id^=zone]'));
+        const currentZoneIndex = zones.findIndex(zone => {
+            const rect = zone.getBoundingClientRect();
+            return rect.top >= 0 && rect.top < window.innerHeight;
+        });
 
-        const zone1Bounding = zone1.getBoundingClientRect();
-        const zone2Bounding = zone2.getBoundingClientRect();
-        const zone3Bounding = zone3.getBoundingClientRect();
-        const zone4Bounding = zone4.getBoundingClientRect();
-        const zone5Bounding = zone5.getBoundingClientRect();
-        const zone6Bounding = zone6.getBoundingClientRect();
-        const zone7Bounding = zone7.getBoundingClientRect();
-
-        if (zone1Bounding.top >= 0 && zone1Bounding.top < window.innerHeight) {
-            zone2.scrollIntoView({ behavior: 'smooth' });
-        } else if (zone2Bounding.top >= 0 && zone2Bounding.top < window.innerHeight) {
-            zone3.scrollIntoView({ behavior: 'smooth' });
-        } else if (zone3Bounding.top >= 0 && zone3Bounding.top < window.innerHeight) {
-            zone4.scrollIntoView({ behavior: 'smooth' });
-        } else if (zone4Bounding.top >= 0 && zone4Bounding.top < window.innerHeight) {
-            zone5.scrollIntoView({ behavior: 'smooth' });
-        } else if (zone5Bounding.top >= 0 && zone5Bounding.top < window.innerHeight) {
-            zone6.scrollIntoView({ behavior: 'smooth' });
-        } else if (zone6Bounding.top >= 0 && zone6Bounding.top < window.innerHeight) {
-            zone7.scrollIntoView({ behavior: 'smooth' });
-        } else if (zone7Bounding.top >= 0 && zone7Bounding.top < window.innerHeight) {
-            zone1.scrollIntoView({ behavior: 'smooth' });
+        if (currentZoneIndex !== -1) {
+            const nextZoneIndex = (currentZoneIndex + 1) % zones.length;
+            setCurrentZone(nextZoneIndex + 1);
+            zones[nextZoneIndex].scrollIntoView({ behavior: 'smooth' });
         }
     };
 
-    const handleKeyPress = (e) => {
-        if (e.key === ' ' || e.key === 'ArrowDown') {
-            handleClick();
+    const handleScrollToPreviousZone = () => {
+        const zones = Array.from(document.querySelectorAll('[id^=zone]'));
+        const currentZoneIndex = zones.findIndex(zone => {
+            const rect = zone.getBoundingClientRect();
+            return rect.top >= 0 && rect.top < window.innerHeight;
+        });
+
+        if (currentZoneIndex !== -1) {
+            const previousZoneIndex = (currentZoneIndex - 1 + zones.length) % zones.length;
+            setCurrentZone(previousZoneIndex + 1);
+            zones[previousZoneIndex].scrollIntoView({ behavior: 'smooth' });
         }
     };
 
     useEffect(() => {
-        window.addEventListener('keydown', handleKeyPress);
+        // Ajouter le gestionnaire de clic pour descendre d'une zone
+        window.addEventListener('click', handleClick);
+
         return () => {
-            window.removeEventListener('keydown', handleKeyPress);
+            // Nettoyer le gestionnaire lors du démontage du composant
+            window.removeEventListener('click', handleClick);
         };
     }, []);
 
     return (
-        <div onClick={handleClick} className="h-screen overflow-hidden relative">
+        <div className="h-screen overflow-hidden relative">
             {children}
-            <div className="absolute bottom-0 w-full h-20 bg-transparent cursor-pointer"></div>
+            <div
+                onClick={(e) => {
+                    e.stopPropagation(); // Empêcher le clic sur le bouton d'être capturé par le gestionnaire de clic de la page
+                    handleScrollToPreviousZone();
+                }}
+                className="fixed bottom-5 right-5 bg-blue-500 text-white rounded-full p-3 cursor-pointer shadow-lg"
+                style={{ zIndex: 1000 }}
+            >
+                ↑ {/* Utiliser un caractère ou une icône pour la flèche */}
+            </div>
         </div>
     );
 };
