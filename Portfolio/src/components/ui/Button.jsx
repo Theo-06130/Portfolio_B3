@@ -2,7 +2,7 @@ import React from 'react';
 
 const Button = ({ children, className, ...props }) => {
     return (
-        <button className={`px-4 py-2 bg-blue-500 text-white ${className}`} {...props}>
+        <button className={`px-4 py-2 bg-[#7CD7E9] text-[#03060F] ${className}`} {...props}>
             {children}
         </button>
     );
