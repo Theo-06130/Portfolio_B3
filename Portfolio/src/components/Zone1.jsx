@@ -7,7 +7,7 @@ import scroll from '../assets/scroll.svg'
 
 const Zone1 = () => {
     return (
-        <div id="zone1" className="scroll-zone h-screen bg-black flex flex-col items-center justify-center">
+        <div id="zone1" className="scroll-zone text-white h-screen bg-black flex flex-col items-center justify-center">
             <HaloEffect />
             <main className="w-screen h-screen overflow-hidden xl:mt-24">
                 <TypingAnimation className="text-7xl mt-10 mb-10" text="Théo Cerkownik" />
