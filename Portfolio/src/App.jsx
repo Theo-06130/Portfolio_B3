@@ -15,10 +15,10 @@ function App() {
     return (
         <>
             <Helmet>
-                <meta charSet="utf-8" />
+                <meta charSet="utf-8"/>
                 <title>Théo Cerkownik</title>
                 <link rel="stylesheet"
-                      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+                      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"/>
             </Helmet>
             <ScrollHandler>
                 <Zone1 />
