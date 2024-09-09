@@ -6,27 +6,27 @@ export function BoxRevealForma() {
     return (
         <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden">
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                <p className="text-2xl font-semibold md:text-[3.5rem] md:mb-4 md:mt-4 ">
+                <p className="text-3xl font-semibold md:text-[3.5rem] md:mb-4 md:mt-4 ">
                     Formations<span className="text-[#5046e6]">.</span>
                 </p>
             </BoxReveal>
 
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                <h2 className="mt-[.5rem] text-[1rem] text-left">
+                <h2 className="mt-[1.5rem] text-[1rem] text-left md:mt-[.5rem]">
                     Baccalauréat Général - {" "}
                     <span className="text-[#5046e6]">Section Européenne Anglais</span>
                 </h2>
             </BoxReveal>
 
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                <div className="mt-[1.5rem]">
+                <div className="mt-[.5rem] md:mt-[1.5rem]">
                     <p className="text-left">
                         -&gt; Mes spécialisations
                         <span className="font-semibold text-[#5046e6]"> NSI ( Numériques et Sciences Informatique )</span>,
                         <span className="font-semibold text-[#5046e6]"> Physique-Chimie</span>,
                         <span className="font-semibold text-[#5046e6]"> Mathématiques</span>.
                     </p>
-                    <p className="mt-[1.5rem] text-left">
+                    <p className="mt-[.5rem] text-left md:mt-[1.5rem]">
                         -&gt; Réalisations de différents projets dont
                         <span className="font-semibold text-[#5046e6]"> AI FOR YOUTH</span> organisé par Intel
                         .
@@ -34,23 +34,23 @@ export function BoxRevealForma() {
                     </p>
                 </div>
             </BoxReveal>
-            <hr className="mt-8 rounded  bg-white"/>
+            <hr className="mt-2.5 rounded  bg-white md:mt-8"/>
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                <h2 className="mt-8 text-[1rem] text-left">
+                <h2 className="mt-2.5 text-[1rem] text-left md:mt-8">
                     Bachelor informatique - {" "}
                     <span className="text-[#5046e6]">Spécialisation Cybersécurité jusqu'au Bac+5</span>
                 </h2>
             </BoxReveal>
 
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                <div className="mt-[1.5rem]">
+                <div className="mt-[.5rem] md:mt-[1.5rem]">
                     <p className="text-left">
                         -&gt; Mes spécialisations
                         <span className="font-semibold text-[#5046e6]"> NSI ( Numériques et Sciences Informatique )</span>,
                         <span className="font-semibold text-[#5046e6]"> Physique-Chimie</span>,
                         <span className="font-semibold text-[#5046e6]"> Mathématiques</span>.
                     </p>
-                    <p className="mt-[1.5rem] text-left">
+                    <p className="mt-[.5rem] text-left md:mt-[1.5rem]">
                         -&gt; Réalisations de différents projets dont
                         <span className="font-semibold text-[#5046e6]"> AI FOR YOUTH</span> organisé par Intel
                         .
@@ -60,7 +60,7 @@ export function BoxRevealForma() {
             </BoxReveal>
 
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                <Button className="mt-[1.6rem] bg-[#5046e6]">Explore</Button>
+                <Button className="mt-[.6rem] bg-[#5046e6] md:mt-[1.6rem]">Explore</Button>
             </BoxReveal>
         </div>
     );
