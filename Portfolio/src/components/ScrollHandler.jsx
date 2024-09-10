@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PulsatingButton from "@/components/magicui/pulsating-button";
 
 const ScrollHandler = ({ children }) => {
     const [currentZone, setCurrentZone] = useState(1);
@@ -59,16 +60,16 @@ const ScrollHandler = ({ children }) => {
             {children}
 
             {/* Bouton pour remonter d'une zone */}
-            <div
+            <PulsatingButton
                 onClick={(e) => {
                     e.stopPropagation(); // Pour éviter le conflit avec le clic de descente
                     goToPrevZone();
                 }}
-                className="fixed bottom-5 right-5 bg-blue-500 text-white rounded-full p-3 cursor-pointer shadow-lg"
-                style={{ zIndex: 1000 }}
+                className="fixed z-40 bottom-5 w-12 h-12 right-5 rounded-full bg-[#2E124E] text-white transition-all duration-300 hover:bottom-7 hover:w-14 hover:h-14"
+
             >
                 ↑ {/* Utiliser une icône ou caractère pour la flèche */}
-            </div>
+            </PulsatingButton>
         </div>
     );
 };
