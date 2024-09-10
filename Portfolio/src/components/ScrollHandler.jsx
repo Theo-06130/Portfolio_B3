@@ -1,58 +1,73 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const ScrollHandler = ({ children }) => {
     const [currentZone, setCurrentZone] = useState(1);
 
-    const handleClick = () => {
-        const zones = Array.from(document.querySelectorAll('[id^=zone]'));
-        const currentZoneIndex = zones.findIndex(zone => {
-            const rect = zone.getBoundingClientRect();
-            return rect.top >= 0 && rect.top < window.innerHeight;
-        });
-
-        if (currentZoneIndex !== -1) {
-            const nextZoneIndex = (currentZoneIndex + 1) % zones.length;
-            setCurrentZone(nextZoneIndex + 1);
-            zones[nextZoneIndex].scrollIntoView({ behavior: 'smooth' });
+    const handleScroll = (e) => {
+        e.preventDefault();
+        if (e.deltaY > 0) {
+            // Scroll vers le bas, donc aller à la zone suivante
+            goToNextZone();
+        } else {
+            // Scroll vers le haut, donc revenir à la zone précédente
+            goToPrevZone();
         }
     };
 
-    const handleScrollToPreviousZone = () => {
-        const zones = Array.from(document.querySelectorAll('[id^=zone]'));
-        const currentZoneIndex = zones.findIndex(zone => {
-            const rect = zone.getBoundingClientRect();
-            return rect.top >= 0 && rect.top < window.innerHeight;
-        });
+    const goToNextZone = () => {
+        const nextZone = currentZone + 1;
+        const targetZone = document.getElementById(`zone${nextZone}`);
+        if (targetZone) {
+            targetZone.scrollIntoView({ behavior: 'smooth' });
+            setCurrentZone(nextZone);
+        }
+    };
 
-        if (currentZoneIndex !== -1) {
-            const previousZoneIndex = (currentZoneIndex - 1 + zones.length) % zones.length;
-            setCurrentZone(previousZoneIndex + 1);
-            zones[previousZoneIndex].scrollIntoView({ behavior: 'smooth' });
+    const goToPrevZone = () => {
+        const prevZone = currentZone - 1;
+        const targetZone = document.getElementById(`zone${prevZone}`);
+        if (targetZone) {
+            targetZone.scrollIntoView({ behavior: 'smooth' });
+            setCurrentZone(prevZone);
+        }
+    };
+
+    const handleClickOnPage = () => {
+        goToNextZone();
+    };
+
+    const handleKeyPress = (e) => {
+        if (e.key === ' ' || e.key === 'ArrowDown') {
+            goToNextZone();
+        } else if (e.key === 'ArrowUp') {
+            goToPrevZone();
         }
     };
 
     useEffect(() => {
-        // Ajouter le gestionnaire de clic pour descendre d'une zone
-        window.addEventListener('click', handleClick);
+        window.addEventListener('keydown', handleKeyPress);
+        window.addEventListener('wheel', handleScroll);
 
         return () => {
-            // Nettoyer le gestionnaire lors du démontage du composant
-            window.removeEventListener('click', handleClick);
+            window.removeEventListener('keydown', handleKeyPress);
+            window.removeEventListener('wheel', handleScroll);
         };
-    }, []);
+    }, [currentZone]);
 
     return (
-        <div className="h-screen overflow-hidden relative">
+        <div onClick={handleClickOnPage} className="h-screen overflow-hidden relative">
             {children}
+
+            {/* Bouton pour remonter d'une zone */}
             <div
                 onClick={(e) => {
-                    e.stopPropagation(); // Empêcher le clic sur le bouton d'être capturé par le gestionnaire de clic de la page
-                    handleScrollToPreviousZone();
+                    e.stopPropagation(); // Pour éviter le conflit avec le clic de descente
+                    goToPrevZone();
                 }}
                 className="fixed bottom-5 right-5 bg-blue-500 text-white rounded-full p-3 cursor-pointer shadow-lg"
                 style={{ zIndex: 1000 }}
             >
-                ↑ {/* Utiliser un caractère ou une icône pour la flèche */}
+                ↑ {/* Utiliser une icône ou caractère pour la flèche */}
             </div>
         </div>
     );
