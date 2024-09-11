@@ -71,11 +71,11 @@ export function BoxRevealCompetences() {
                         -&gt; Partie Réseaux/Infrastructure
                         <span className="font-semibold text-[#7CD7E9]"> Cisco packet tracer</span>,
                         <span className="font-semibold text-[#7CD7E9]"> Windows Server 2019</span>,
-                        <span className="font-semibold text-[#7CD7E9]"> Ubuntu/Debian/TrueNAS</span>,
+                        <span className="font-semibold text-[#7CD7E9]"> Ubuntu/Debian/TrueNAS</span>
                     </p>
                     <p className="mt-[0.8rem] text-left ml-6 md:mt-[1.8rem]">
                         -&gt; Autres
-                        <span className="font-semibold text-[#7CD7E9]"> Wordpress</span>
+                        <span className="font-semibold text-[#7CD7E9]"> Wordpress</span>.
                     </p>
                 </div>
             </BoxReveal>
