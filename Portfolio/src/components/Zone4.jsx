@@ -1,12 +1,14 @@
 import React from 'react';
-
+import {SparklesTextDemo} from "@/components/magicui/sparkles-text-demo.tsx";
+import {BlurFadeDemo} from "@/components/magicui/blur-fade-demo.tsx";
 const Zone4 = () => {
     return (
         <div
             id="zone4"
-            className="scroll-zone h-screen bg-gradient-to-b from-gray-900 to-gray-800 flex items-center justify-center absolute top-[300vh] w-screen"
+            className="scroll-zone h-screen bg-gradient-to-b from-gray-900 to-gray-800 flex flex-col items-center justify-center absolute top-[300vh] w-screen"
         >
-            <h1 className="text-5xl text-white">Zone 4</h1>
+            <SparklesTextDemo/>
+            <BlurFadeDemo/>
         </div>
     );
 };
