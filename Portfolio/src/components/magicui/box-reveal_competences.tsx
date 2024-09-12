@@ -1,4 +1,3 @@
-import Button  from "../ui/Button.jsx";
 import BoxReveal from "@/components/magicui/box-reveal";
 import React from "react";
 
@@ -71,7 +70,7 @@ export function BoxRevealCompetences() {
                         -&gt; Partie Réseaux/Infrastructure
                         <span className="font-semibold text-[#7CD7E9]"> Cisco packet tracer</span>,
                         <span className="font-semibold text-[#7CD7E9]"> Windows Server 2019</span>,
-                        <span className="font-semibold text-[#7CD7E9]"> Ubuntu/Debian/TrueNAS</span>
+                        <span className="font-semibold text-[#7CD7E9]"> Ubuntu/Debian/TrueNAS</span>.
                     </p>
                     <p className="mt-[0.8rem] text-left ml-6 md:mt-[1.8rem]">
                         -&gt; Autres
@@ -79,10 +78,6 @@ export function BoxRevealCompetences() {
                     </p>
                 </div>
             </BoxReveal>
-
-            {/*<BoxReveal boxColor={"#7CD7E9"} duration={0.5}>*/}
-            {/*    <Button className="mt-[.6rem] bg-[#7CD7E9] md:mt-[1.6rem]">Explore</Button>*/}
-            {/*</BoxReveal>*/}
         </div>
     );
 }
