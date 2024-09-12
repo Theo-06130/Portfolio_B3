@@ -54,10 +54,6 @@ export function BoxRevealForma() {
                     </p>
                 </div>
             </BoxReveal>
-
-            {/*<BoxReveal boxColor={"#7CD7E9"} duration={0.5}>*/}
-            {/*    <Button className="mt-[.6rem] bg-[#7CD7E9] md:mt-[1.6rem]">Explore</Button>*/}
-            {/*</BoxReveal>*/}
         </div>
     );
 }

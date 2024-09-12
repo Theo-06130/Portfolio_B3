@@ -1,4 +1,3 @@
-import Button  from "../ui/Button.jsx";
 import BoxReveal from "@/components/magicui/box-reveal";
 import React from "react";
 
@@ -79,10 +78,6 @@ export function BoxRevealCompetences() {
                     </p>
                 </div>
             </BoxReveal>
-
-            {/*<BoxReveal boxColor={"#7CD7E9"} duration={0.5}>*/}
-            {/*    <Button className="mt-[.6rem] bg-[#7CD7E9] md:mt-[1.6rem]">Explore</Button>*/}
-            {/*</BoxReveal>*/}
         </div>
     );
 }
