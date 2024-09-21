@@ -7,10 +7,8 @@ const ScrollHandler = ({ children }) => {
     const handleScroll = (e) => {
         e.preventDefault();
         if (e.deltaY > 0) {
-            // Scroll vers le bas, donc aller à la zone suivante
             goToNextZone();
         } else {
-            // Scroll vers le haut, donc revenir à la zone précédente
             goToPrevZone();
         }
     };
@@ -57,18 +55,20 @@ const ScrollHandler = ({ children }) => {
 
     return (
         <div onClick={handleClickOnPage} className="h-screen overflow-hidden relative">
-            {children}
+            {/* Passer currentZone comme prop aux enfants */}
+            {React.Children.map(children, (child) =>
+                React.cloneElement(child, { currentZone })
+            )}
 
             {/* Bouton pour remonter d'une zone */}
             <PulsatingButton
                 onClick={(e) => {
-                    e.stopPropagation(); // Pour éviter le conflit avec le clic de descente
+                    e.stopPropagation();
                     goToPrevZone();
                 }}
                 className="fixed z-40 bottom-5 w-12 h-12 right-5 rounded-full bg-[#2E124E] text-white transition-all duration-300 hover:bottom-7 hover:w-14 hover:h-14"
-
             >
-                ↑ {/* Utiliser une icône ou caractère pour la flèche */}
+                ↑
             </PulsatingButton>
         </div>
     );
