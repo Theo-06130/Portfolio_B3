@@ -16,7 +16,7 @@ let notifications = [
     {
         name: "Naissance",
         description: "Début de l'aventure",
-        time: "16/02/2004",
+        time: "2004",
         icon: "👶",
         color: "#00C9A7",
     },
