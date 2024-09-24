@@ -51,7 +51,7 @@ let notifications = [
     {
         name: "3ème année informatique",
         description: "Spécialité cybersécurité",
-        time: "2023/2024",
+        time: "2024/2025",
         icon: "🔒",
         color: "rgba(152,2,2,0.92)",
     },    {

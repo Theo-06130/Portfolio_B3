@@ -25,7 +25,7 @@ function App() {
                 <Zone3 />
                 <Zone4 />
                 <Zone5 />
-                <Zone6 />
+                <Zone6/>
                 <Zone7 />
             </ScrollHandler>
         </>
