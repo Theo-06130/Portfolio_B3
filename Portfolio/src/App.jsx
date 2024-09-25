@@ -9,6 +9,11 @@ import Zone4 from './components/Zone4.jsx';
 import Zone5 from './components/Zone5.jsx';
 import Zone6 from "@/components/Zone6.jsx";
 import Zone7 from "@/components/Zone7.jsx";
+import Zone8 from "@/components/Zone8.jsx";
+import Zone9 from "@/components/Zone9.jsx";
+import Zone10 from "@/components/Zone10.jsx";
+import Zone11 from "@/components/Zone11.jsx";
+
 
 function App() {
     return (
@@ -27,6 +32,10 @@ function App() {
                 <Zone5 />
                 <Zone6/>
                 <Zone7 />
+                <Zone8 />
+                <Zone9/>
+                <Zone10/>
+                <Zone11/>
             </ScrollHandler>
         </>
     );
