@@ -4,42 +4,44 @@ import React from "react";
 
 export function BoxReveal_Cozette() {
     return (
-        <div className="h-full text-gray-900 w-full max-w-[32rem] items-center justify-center overflow-hidden">
-            <BoxReveal boxColor={"#095edc"} duration={0.5}>
+        <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden">
+            <BoxReveal boxColor={"#7CD7E9"} duration={0.5}>
                 <p className="text-2xl mt-4 font-semibold md:text-[3.5rem] md:mb-4 md:mt-10 ">
-                    Cozette<span className="text-[#095edc]">.</span>
+                    Cozette<span className="text-[#7CD7E9]">.</span>
                 </p>
             </BoxReveal>
 
-            <BoxReveal boxColor={"#095edc"} duration={0.5}>
+            <BoxReveal boxColor={"#7CD7E9"} duration={0.5}>
                 <h2 className="mt-[0.8rem] text-[1.2rem] text-left md:mt-[1.8rem]">
                     Présentation de l'entreprise - {" "}
-                    <span className="text-[#095edc]">Conciergerie du bien-être</span>
+                    <span className="text-[#7CD7E9]">Conciergerie du bien-être</span>
                 </h2>
             </BoxReveal>
 
-            <BoxReveal boxColor={"#095edc"} duration={0.5}>
+            <BoxReveal boxColor={"#7CD7E9"} duration={0.5}>
                 <div className="mt-[0.8rem] md:mt-[1.8rem]">
                     <p className="text-left ml-6">
-                        -&gt; Cozette est une conciergerie spécialisée dans le bien-être, offrant des services variés pour améliorer la qualité de vie de ses clients.
+                        -&gt; <span className="text-[#7CD7E9]">Cozette</span> propose des services de <span className="text-[#7CD7E9]">bien-être</span> et de <span className="text-[#7CD7E9]">développement personnel</span>, mettant en relation des <span className="text-[#7CD7E9]">professionnels de différents domaines</span> pour répondre aux besoins de ses clients.
                     </p>
                     <p className="mt-[0.8rem] text-left ml-6 md:mt-[1.8rem]">
-                        -&gt; L'entreprise se consacre à créer des solutions personnalisées, allant des services de bien-être à domicile aux conseils en gestion du temps.
+                        -&gt; L'entreprise avait également pour objectif de créer un <span className="text-[#7CD7E9]">studio de communication</span> pour aider les entreprises à développer leur <span className="text-[#7CD7E9]">image de marque</span> à travers la création de <span className="text-[#7CD7E9]">logos</span>, de <span className="text-[#7CD7E9]">maquettes</span> et de <span className="text-[#7CD7E9]">direction artistique</span> sur les réseaux sociaux.
                     </p>
                 </div>
             </BoxReveal>
-            <hr className="mt-2.5 rounded  bg-white md:mt-8"/>
-            <BoxReveal boxColor={"#095edc"} duration={0.5}>
+
+            <hr className="mt-2.5 rounded bg-white md:mt-8"/>
+
+            <BoxReveal boxColor={"#7CD7E9"} duration={0.5}>
                 <h2 className="mt-2.5 text-[1.2rem] text-left md:mt-8">
                     Stage de 2ème année - {" "}
-                    <span className="text-[#095edc]">Création du site WordPress pour StudioCom</span>
+                    <span className="text-[#7CD7E9]">Création du site WordPress pour StudioCom</span>
                 </h2>
             </BoxReveal>
 
-            <BoxReveal boxColor={"#095edc"} duration={0.5}>
+            <BoxReveal boxColor={"#7CD7E9"} duration={0.5}>
                 <div className="mt-[0.8rem] md:mt-[1.8rem]">
                     <p className="text-left ml-6">
-                        -&gt; Lors de mon stage, j'ai été en charge de la création du site WordPress pour StudioCom, un projet qui m'a permis de mettre en pratique mes compétences en développement web.
+                        -&gt; Mon objectif était de mettre en place un <span className="text-[#7CD7E9]">site internet fonctionnel</span>, <span className="text-[#7CD7E9]">responsive</span>, <span className="text-[#7CD7E9]">moderne</span> et facile à mettre à jour par un utilisateur lambda. Le travail s'est fait en <span className="text-[#7CD7E9]">collaboration</span> avec une autre personne, responsable des <span className="text-[#7CD7E9]">maquettes</span> et du <span className="text-[#7CD7E9]">texte</span>.
                     </p>
                 </div>
             </BoxReveal>

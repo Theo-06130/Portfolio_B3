@@ -19,7 +19,7 @@ const Zone5 = ({ currentZone }) => {
         <div
             id="zone5"
             ref={zone5Ref}
-            className="scroll-zone h-screen bg-gradient-to-b from-gray-800 to-gray-700 flex flex-col justify-around absolute top-[400vh] w-screen"
+            className="scroll-zone h-screen bg-gradient-to-b from-gray-900 to-gray-800 flex flex-col justify-around absolute top-[400vh] w-screen"
         >
             {isInView && <GradualSpacingDemo />}
             <AnimatedListDemo/>

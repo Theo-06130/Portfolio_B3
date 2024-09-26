@@ -17,45 +17,45 @@ export function BoxReveal_Doca() {
                     <span className="text-[#7CD7E9]">Leader de la transition numérique</span>
                 </h2>
             </BoxReveal>
-
             <BoxReveal boxColor={"#7CD7E9"} duration={0.5}>
                 <div className="mt-[0.8rem] md:mt-[1.8rem]">
                     <p className="text-left ml-6">
-                        -&gt; Docaposte est une filiale du groupe La Poste, spécialisée dans la
+                        -&gt; Docaposte, filiale du groupe La Poste, est spécialisée dans la
                         <span className="font-semibold text-[#7CD7E9]"> transformation digitale</span> et la
                         <span className="font-semibold text-[#7CD7E9]"> gestion documentaire</span>.
-                    </p>
-                    <p className="mt-[0.8rem] text-left ml-6 md:mt-[1.8rem]">
-                        -&gt; L'entreprise offre des solutions innovantes permettant d'optimiser la
-                        <span className="font-semibold text-[#7CD7E9]"> dématérialisation</span> des documents
-                        et la <span className="font-semibold text-[#7CD7E9]"> sécurisation des données </span>
-                        tout en garantissant la conformité réglementaire. <br />
+                        Elle propose des solutions de <span className="font-semibold text-[#7CD7E9]">dématérialisation</span>
+                        et de <span className="font-semibold text-[#7CD7E9]">sécurisation des données</span> tout en garantissant
+                        la conformité réglementaire.
                     </p>
                 </div>
             </BoxReveal>
+
+
             <hr className="mt-2.5 rounded  bg-white md:mt-8"/>
+
+
             <BoxReveal boxColor={"#7CD7E9"} duration={0.5}>
                 <h2 className="mt-2.5 text-[1.2rem] text-left md:mt-8">
-                    Engagement en faveur de l'innovation - {" "}
-                    <span className="text-[#7CD7E9]">Partenaire de confiance pour les entreprises</span>
+                    Expérience chez Docaposte - {" "}
+                    <span className="text-[#7CD7E9]">Exploration des services numériques</span>
                 </h2>
             </BoxReveal>
 
             <BoxReveal boxColor={"#7CD7E9"} duration={0.5}>
                 <div className="mt-[0.8rem] md:mt-[1.8rem]">
                     <p className="text-left ml-6">
-                        -&gt; Docaposte investit dans des technologies émergentes telles que
-                        <span className="font-semibold text-[#7CD7E9]"> l'intelligence artificielle</span> et
-                        <span className="font-semibold text-[#7CD7E9]"> la blockchain</span> pour répondre aux défis
-                        actuels des entreprises.
+                        -&gt; J'ai eu l'opportunité d'observer plusieurs domaines clés chez Docaposte, notamment
+                        <span className="font-semibold text-[#7CD7E9]"> le développement Java</span>,
+                        <span className="font-semibold text-[#7CD7E9]"> la sécurité SOC</span>, et
+                        <span className="font-semibold text-[#7CD7E9]"> la maintenance/infra</span>.
                     </p>
                     <p className="mt-[0.8rem] text-left ml-6 md:mt-[1.8rem]">
-                        -&gt; Grâce à son expertise, Docaposte accompagne les organisations dans leur
-                        <span className="font-semibold text-[#7CD7E9]"> transformation numérique</span> et leur permet
-                        d'améliorer l'efficacité de leurs processus opérationnels.
+                        -&gt; Cette immersion m'a permis de mieux comprendre le rôle crucial des solutions technologiques dans la gestion
+                        des systèmes et des données.
                     </p>
                 </div>
             </BoxReveal>
+
         </div>
     );
 }

@@ -5,7 +5,7 @@ const Zone4 = () => {
     return (
         <div
             id="zone4"
-            className="scroll-zone h-screen bg-gradient-to-b from-gray-900 to-gray-800 flex flex-col items-center justify-center absolute top-[300vh] w-screen"
+            className="scroll-zone h-screen bg-gradient-to-b from-gray-950 to-gray-900 flex flex-col items-center justify-center absolute top-[300vh] w-screen"
         >
             <SparklesTextDemo/>
             <BlurFadeDemo/>
