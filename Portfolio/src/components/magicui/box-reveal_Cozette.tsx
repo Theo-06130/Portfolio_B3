@@ -21,10 +21,10 @@ export function BoxReveal_Cozette() {
             <BoxReveal boxColor={"#7CD7E9"} duration={0.5}>
                 <div className="mt-[0.8rem] md:mt-[1.8rem]">
                     <p className="text-left ml-6">
-                        -&gt; <span className="text-[#7CD7E9]">Cozette</span> propose des services de <span className="text-[#7CD7E9]">bien-être</span> et de <span className="text-[#7CD7E9]">développement personnel</span>, mettant en relation des <span className="text-[#7CD7E9]">professionnels de différents domaines</span> pour répondre aux besoins de ses clients.
+                        -&gt; Cozette propose des services de <span className="text-[#7CD7E9]">bien-être</span> et de <span className="text-[#7CD7E9]">développement personnel</span>, mettant en relation des <span className="text-[#7CD7E9]">professionnels</span> pour répondre aux besoins de ses clients.
                     </p>
                     <p className="mt-[0.8rem] text-left ml-6 md:mt-[1.8rem]">
-                        -&gt; L'entreprise avait également pour objectif de créer un <span className="text-[#7CD7E9]">studio de communication</span> pour aider les entreprises à développer leur <span className="text-[#7CD7E9]">image de marque</span> à travers la création de <span className="text-[#7CD7E9]">logos</span>, de <span className="text-[#7CD7E9]">maquettes</span> et de <span className="text-[#7CD7E9]">direction artistique</span> sur les réseaux sociaux.
+                        -&gt; L'entreprise vise à créer un <span className="text-[#7CD7E9]">studio de communication</span> pour aider les entreprises à développer leur <span className="text-[#7CD7E9]">image de marque</span>.
                     </p>
                 </div>
             </BoxReveal>
