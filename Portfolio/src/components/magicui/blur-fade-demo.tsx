@@ -3,6 +3,7 @@ import React from "react";
 import biblivres from '../../assets/biblivres.png'
 import accessibilite from '../../assets/bouche_glacee.png'
 import spoonacular from '../../assets/spoonacular.png'
+import studiocom from '../../assets/studiocom.png'
 
 
 const images = [
@@ -17,6 +18,10 @@ const images = [
     {
         src: spoonacular,
         link: 'https://theo-06130.github.io/spoonacular/',
+    },
+    {
+        src: studiocom,
+        link: 'https://studio.cozette-studiocom.fr/',
     },
     // Ajoute d'autres objets si nécessaire
 ];
