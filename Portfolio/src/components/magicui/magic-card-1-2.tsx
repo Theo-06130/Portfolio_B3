@@ -27,7 +27,7 @@ export function MagicCard1_2() {
 
                     {/* Texte */}
                     <p className="text-sm text-gray-300 mt-2.5 text-left">
-                        Travailler chez <span className="text-[#7CD7E9]">Cozette</span>, une conciergerie du bien-être, m'a permis d'appréhender leur fonctionnement. En pleine croissance, ils cherchent à <span className="text-[#7CD7E9]">digitaliser</span> leurs services pour améliorer la <span className="text-[#7CD7E9]">communication</span> interne. Cela a été une expérience enrichissante pour comprendre les enjeux organisationnels et l'importance d'un système d'information efficace.
+                        Travailler chez <span className="text-[#7CD7E9]">Cozette</span> m'a permis de découvrir leur projet de création d'un studio de communication, <span className="text-[#7CD7E9]">StudioCom</span>. Ce studio vise à aider à la transition digitale en proposant des <span className="text-[#7CD7E9]">formations</span> sur la création d'entreprise, l'identité visuelle et le community management.
                     </p>
                 </MagicCard>
 
@@ -49,7 +49,7 @@ export function MagicCard1_2() {
 
                     {/* Texte */}
                     <p className="text-sm text-gray-300 mt-2.5 text-left">
-                        L'intégration dans l'équipe s'est faite de manière fluide. Grâce à une bonne collaboration avec le responsable des maquettes et des contenus, j'ai pu contribuer rapidement à la mise en place du site WordPress. Cette <span className="text-[#7CD7E9]">synergie</span> a facilité notre travail, permettant d'ajuster le site aux besoins de l'équipe et d'assurer une <span className="text-[#7CD7E9]">réactivité</span> optimale.
+                        L'intégration dans l'équipe s'est faite de manière fluide. Grâce à une bonne collaboration avec la responsable des maquettes et des contenus, j'ai pu contribuer rapidement à la mise en place du site WordPress. Cette <span className="text-[#7CD7E9]">synergie</span> a facilité notre travail, permettant d'ajuster le site aux besoins de l'équipe et d'assurer une <span className="text-[#7CD7E9]">réactivité</span> optimale.
                     </p>
                 </MagicCard>
             </div>
