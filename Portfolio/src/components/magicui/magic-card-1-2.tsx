@@ -16,7 +16,7 @@ export function MagicCard1_2() {
                 >
                     <div className="w-full flex justify-between">
                         {/* Date */}
-                        <p className="text-gray-400 text-sm">27/09/24</p>
+                        <p className="text-gray-400 text-sm">6/06/24</p>
 
                         {/* Nom */}
                         <p className="text-gray-400 text-sm">Théo CERKOWNIK</p>
@@ -38,7 +38,7 @@ export function MagicCard1_2() {
                 >
                     <div className="w-full flex justify-between">
                         {/* Date */}
-                        <p className="text-gray-400 text-sm">27/09/24</p>
+                        <p className="text-gray-400 text-sm">10/06/24</p>
 
                         {/* Nom */}
                         <p className="text-gray-400 text-sm">Théo CERKOWNIK</p>
