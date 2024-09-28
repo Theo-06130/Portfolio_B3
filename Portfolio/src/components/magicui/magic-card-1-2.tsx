@@ -11,7 +11,7 @@ export function MagicCard1_2() {
             <div className="w-screen h-screen flex flex-col items-center justify-around">
                 {/* Première MagicCard */}
                 <MagicCard
-                    className="cursor-pointer w-4/5 h-2/5 bg-gray-950 text-white shadow-2xl p-4 flex flex-col justify-between md:w-1/3 md:h-2/5"
+                    className="cursor-pointer w-screen m-6 h-1/2 bg-gray-950 text-white shadow-2xl p-4 flex flex-col justify-between md:w-1/3 md:h-2/5"
                     gradientColor={theme === "dark" ? "rgba(124,215,233,0.74)" : "rgba(9,94,220,0.7)"}
                 >
                     <div className="w-full flex justify-between">
@@ -23,11 +23,11 @@ export function MagicCard1_2() {
                     </div>
 
                     {/* Titre */}
-                    <h2 className="text-xl font-bold text-white">Pourquoi j'ai choisi WordPress</h2>
+                    <h2 className="text-xl font-bold text-white">Comprendre l'organisation</h2>
 
                     {/* Texte */}
                     <p className="text-sm text-gray-300">
-                        J'ai choisi <span className="text-[#7CD7E9]">WordPress</span> pour son <span className="text-[#7CD7E9]">gain de temps</span> et ses <span className="text-[#7CD7E9]">fonctionnalités variées</span>, grâce aux plugins. Il est également <span className="text-[#7CD7E9]">simple à mettre à jour</span>, permettant à l'équipe de gérer le contenu sans compétences techniques.
+                        Cozette, une <span className="text-[#7CD7E9]">conciergerie du bien-être</span> en pleine croissance, cherche à développer un <span className="text-[#7CD7E9]">studio de communication</span>. Leur besoin de <span className="text-[#7CD7E9]">digitalisation</span> et d'amélioration de la <span className="text-[#7CD7E9]">communication</span> interne m'a permis de mieux comprendre les enjeux organisationnels.
                     </p>
                 </MagicCard>
 
@@ -45,11 +45,11 @@ export function MagicCard1_2() {
                     </div>
 
                     {/* Titre */}
-                    <h2 className="text-xl font-bold text-white">Les défis rencontrés</h2>
+                    <h2 className="text-xl font-bold text-white">S'intégrer dans l'équipe</h2>
 
                     {/* Texte */}
                     <p className="text-sm text-gray-300">
-                        Malgré ses avantages, j'ai dû faire face à des problèmes de <span className="text-[#7CD7E9]">compatibilité</span> entre certains plugins et à des défis pour optimiser le site et assurer une bonne performance.
+                        L'intégration s'est faite rapidement grâce à une bonne collaboration avec le responsable des <span className="text-[#7CD7E9]">maquettes</span> et des <span className="text-[#7CD7E9]">contenus</span>. Nous avons travaillé en <span className="text-[#7CD7E9]">synergie</span> pour mettre en place un site WordPress en phase avec les attentes de l'équipe.
                     </p>
                 </MagicCard>
             </div>
