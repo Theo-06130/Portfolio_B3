@@ -16,6 +16,7 @@ import Zone11 from "@/components/Zone11.jsx";
 import Zone12 from "@/components/Zone12.jsx";
 import Zone13 from "@/components/Zone13.jsx";
 import Zone14 from "@/components/Zone14.jsx";
+import Zone15 from "@/components/Zone15.jsx";
 
 
 
@@ -43,6 +44,7 @@ function App() {
                 <Zone12/>
                 <Zone13/>
                 <Zone14/>
+                <Zone15/>
             </ScrollHandler>
         </>
     );
