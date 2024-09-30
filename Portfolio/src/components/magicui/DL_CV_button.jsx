@@ -12,7 +12,7 @@ export function DL_CV_button() {
                     </g>
                 </g>
             </svg>
-            <a href="../../../public/Theo_CERKOWNIK_CV.pdf" download="Theo_CERKOWNIK_CV.pdf" className="text-white decoration-black hover:text-white ">
+            <a href="/Theo_CERKOWNIK_CV.pdf" download="Theo_CERKOWNIK_CV.pdf" className="text-white decoration-black hover:text-white ">
                 Téléchargez mon CV
             </a>
         </button>
