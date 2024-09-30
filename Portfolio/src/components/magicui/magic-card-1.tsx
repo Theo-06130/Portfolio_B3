@@ -12,7 +12,7 @@ export function MagicCard1() {
             <div className="w-screen h-screen flex flex-col items-center justify-around">
                 {/* Première MagicCard */}
                 <MagicCard
-                    className="cursor-pointer w-[calc(100%-24px)] h-[80%] bg-gray-950 text-white shadow-2xl p-4 flex flex-col  justify-between md:w-1/3 md:h-2/5"
+                    className="cursor-pointer w-[calc(100%-24px)] h-[90%] bg-gray-950 text-white shadow-2xl p-4 flex flex-col  justify-between md:w-1/3 md:h-2/5"
                     gradientColor={theme === "dark" ? "rgba(124,215,233,0.74)" : "rgba(9,94,220,0.7)"}
                 >
                     <div className="w-full flex justify-between">
