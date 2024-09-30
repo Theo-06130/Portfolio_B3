@@ -12,10 +12,10 @@ export function BoxReveal_CFM() {
             </BoxReveal>
 
             <BoxReveal boxColor={"#095edc"} duration={0.5}>
-                <h2 className="mt-[0.8rem] text-[1.2rem] text-left md:mt-[1.8rem]">
+                <a href="https://monaco.ca-indosuez.com/fr/cfm-indosuez-a-monaco" target="_blank" className="mt-[0.8rem] text-black underline text-[1.2rem] text-left md:mt-[1.8rem] hover:text-black">
                     Présentation de l'entreprise - {" "}
                     <span className="text-[#095edc]">CFM Indosuez Wealth Management</span>
-                </h2>
+                </a>
             </BoxReveal>
 
             <BoxReveal boxColor={"#095edc"} duration={0.5}>
