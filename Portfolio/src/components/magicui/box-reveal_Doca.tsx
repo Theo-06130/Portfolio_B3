@@ -46,7 +46,7 @@ export function BoxReveal_Doca() {
                     <p className="text-left ml-6">
                         -&gt; J'ai eu l'opportunité d'observer plusieurs domaines clés chez Docaposte, notamment
                         <span className="font-semibold text-[#7CD7E9]"> le développement Java</span>,
-                        <span className="font-semibold text-[#7CD7E9]"> la sécurité SOC</span>, et
+                        <span className="font-semibold text-[#7CD7E9]"> la sécurité ( SOC )</span>, et
                         <span className="font-semibold text-[#7CD7E9]"> la maintenance/infra</span>.
                     </p>
                     <p className="mt-[0.8rem] text-left ml-6 md:mt-[1.8rem]">
