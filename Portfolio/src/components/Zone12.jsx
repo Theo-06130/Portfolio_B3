@@ -1,12 +1,13 @@
     import React from 'react';
-    import {RippleDemo} from "@/components/magicui/Ripple_demo.tsx";
+    import {BoxReveal_CFM} from "@/components/magicui/box-reveal_CFM.tsx";
+
     const Zone12 = () => {
         return (
             <div
                 id="zone12"
-                className="scroll-zone h-screen bg-gradient-to-b from-gray-50 to-white flex items-center justify-center absolute top-[1100vh] w-screen"
+                className="scroll-zone h-screen bg-gradient-to-b from-gray-100 to-gray-50 flex items-center justify-center absolute top-[1100vh] w-screen"
             >
-            <RippleDemo/>
+                <BoxReveal_CFM/>
             </div>
         );
     };
