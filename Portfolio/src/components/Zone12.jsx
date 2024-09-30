@@ -1,12 +1,14 @@
     import React from 'react';
-    import {RippleDemo} from "@/components/magicui/Ripple_demo.tsx";
+    import {MagicCard5} from "@/components/magicui/magic-card-5.tsx";
+
+
     const Zone12 = () => {
         return (
             <div
                 id="zone12"
-                className="scroll-zone h-screen bg-gradient-to-b from-gray-50 to-white flex items-center justify-center absolute top-[1100vh] w-screen"
+                className="scroll-zone h-screen bg-gradient-to-b from-gray-300 to-gray-100 flex items-center justify-center absolute top-[1100vh] w-screen"
             >
-            <RippleDemo/>
+                <MagicCard5/>
             </div>
         );
     };

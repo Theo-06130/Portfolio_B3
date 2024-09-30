@@ -12,10 +12,10 @@ export function BoxReveal_Doca() {
             </BoxReveal>
 
             <BoxReveal boxColor={"#7CD7E9"} duration={0.5}>
-                <h2 className="mt-[0.8rem] text-[1.2rem] text-left md:mt-[1.8rem]">
+                <a href="https://www.docaposte.com/" target="_blank" className="mt-[0.8rem] text-white underline text-[1.2rem] text-left md:mt-[1.8rem] hover:text-white">
                     Présentation de l'entreprise - {" "}
                     <span className="text-[#7CD7E9]">Leader de la transition numérique</span>
-                </h2>
+                </a>
             </BoxReveal>
             <BoxReveal boxColor={"#7CD7E9"} duration={0.5}>
                 <div className="mt-[0.8rem] md:mt-[1.8rem]">
@@ -46,7 +46,7 @@ export function BoxReveal_Doca() {
                     <p className="text-left ml-6">
                         -&gt; J'ai eu l'opportunité d'observer plusieurs domaines clés chez Docaposte, notamment
                         <span className="font-semibold text-[#7CD7E9]"> le développement Java</span>,
-                        <span className="font-semibold text-[#7CD7E9]"> la sécurité SOC</span>, et
+                        <span className="font-semibold text-[#7CD7E9]"> la sécurité ( SOC )</span>, et
                         <span className="font-semibold text-[#7CD7E9]"> la maintenance/infra</span>.
                     </p>
                     <p className="mt-[0.8rem] text-left ml-6 md:mt-[1.8rem]">
