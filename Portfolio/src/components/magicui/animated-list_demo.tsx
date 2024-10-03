@@ -16,30 +16,50 @@ let notifications = [
     {
         name: "Naissance",
         description: "Début de l'aventure",
-        time: "20y ago",
+        time: "2004",
         icon: "👶",
         color: "#00C9A7",
     },
     {
         name: "Stage Observation 3ème",
         description: "Chez Docaposte",
-        time: "6y ago",
+        time: "2018",
         icon: "🔍",
         color: "#FFB800",
     },
     {
         name: "Bac général",
         description: "Spé Physique-chimie/NSI",
-        time: "2y ago",
+        time: "2022",
         icon: "👨‍🎓",
         color: "#10c7e6",
     },
     {
-        name: "3ème année informatique",
-        description: "Spécialité Cyber-sécurité",
-        time: "Now",
+        name: "1ère année informatique",
+        description: "Informatique général (Dev, Cyber, Infra...)",
+        time: "2022/2023",
         icon: "💻",
-        color: "#dc7a12",
+        color: "#edbf8e",
+    },
+    {
+        name: "Stage 2ème année",
+        description: "Création et déploiement site internet",
+        time: "2023/2024",
+        icon: "🕸️",
+        color: "#020937",
+    },
+    {
+        name: "3ème année informatique",
+        description: "Spécialité cybersécurité",
+        time: "2024/2025",
+        icon: "🔒",
+        color: "rgba(152,2,2,0.92)",
+    },    {
+        name: "Alternance Cybersécurité",
+        description: "Assistant Cybersécurité CFM Indosuez",
+        time: "2024/2027",
+        icon: "🏢",
+        color: "rgba(15,199,223,0.92)",
     },
 ];
 
@@ -65,7 +85,7 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
                         backgroundColor: color,
                     }}
                 >
-                    <span className="text-lg">{icon}</span>
+                    <span className="text-lg p-2">{icon}</span>
                 </div>
                 <div className="flex flex-col overflow-hidden">
                     <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">
